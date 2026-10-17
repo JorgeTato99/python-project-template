@@ -1,0 +1,36 @@
+# {{ project_name }}
+
+{{ description }}
+
+## Empezar
+
+Requiere Python >=3.14 y uv >=0.13.1,<0.14. La versión de desarrollo está en `.python-version`.
+
+```console
+uv sync --locked
+uv run --locked python -m {{ package_name }} --version
+```
+
+Sustituye el paquete y comando de ejemplo por las interfaces de tu aplicación al desarrollarla.
+
+## Desarrollo
+
+```console
+uv run --locked python scripts/check.py
+```
+
+- [Guía de desarrollo](docs/development/README.md).
+- [Comandos](docs/development/comandos.md).
+- [Pruebas](docs/development/pruebas.md).
+- [Perfiles opcionales](docs/development/perfiles.md).
+- [Contribuir](CONTRIBUTING.md).
+- [Seguridad](SECURITY.md).
+- [Changelog](CHANGELOG.md).
+
+La instalación de extras y grupos depende de las capacidades que utilice el proyecto. Documenta aquí cómo se ejecuta la aplicación y sus requisitos reales.
+
+## Licencia
+
+Consulta [LICENSE](LICENSE) y personaliza sus avisos según el proyecto.
+
+{{ provenance }}

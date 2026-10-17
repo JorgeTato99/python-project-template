@@ -1,0 +1,75 @@
+{
+  "schema": 2,
+  "checked_at_utc": "2026-10-17T06:05:53.440760+00:00",
+  "phase": "template-changelog-and-publication",
+  "platform": "Windows x86-64",
+  "python": [
+    "3.14.8",
+    "3.15.0"
+  ],
+  "template_tests_passed_per_interpreter": 72,
+  "post_finalization": "full check.py passed in separate project in both end-to-end tests",
+  "restored_guides": [
+    "python-project-anti-patterns.md",
+    "python-boilerplate-guide.md",
+    "testing-guide.md",
+    "testing-patterns.md",
+    "testing-commands.md"
+  ],
+  "documentation_scopes": {
+    "retirable": "docs/template/",
+    "persistent": "docs/development/"
+  },
+  "safety_contracts": [
+    "preview without writes",
+    "pre-bootstrap changes preserved",
+    "post-bootstrap changes preserved",
+    "unknown content blocks cleanup",
+    "source symlinks and Windows junctions rejected",
+    "bootstrap rollback preserves bytes",
+    "finalizer rollback retains backup",
+    "custom README requires explicit preservation",
+    "custom CHANGELOG requires explicit preservation",
+    "repeated bootstrap preserves project history"
+  ],
+  "git_autocrlf_export": "passed bootstrap and finalizer preview with core.autocrlf=true",
+  "github_ci": "configured; not run remotely",
+  "linux": "not run locally",
+  "initial_evidence": "validacion-inicial.json",
+  "upstream_files_unchanged": 44,
+  "source_sha256": {
+    ".gitattributes": "5300c886f37d9e2f40ab397e2f80fea6d55389397eba8559ed8c5763ca983196",
+    ".github/workflows/ci.yml": "3c9a4ca226c4183518f3d6249843fed393508648c91441a679d5945b5ad2fdb4",
+    ".gitignore": "34ecc940d8e6115092a91ee51ddd2624362fe8cbe034c1fd8991479ad3bcea98",
+    ".pre-commit-config.yaml": "f78ed86cfaeb9b794fab6334dde4b826bf5431a33f05681a1c7e47fdd2725ef0",
+    ".python-version": "8effb955f195345405c0cf4d0fb35f65165b59f444ad1a5fd9ff1ca9194fde29",
+    "pyproject.toml": "97511f30d36a7cd1b04511c83f43df0cf0766efb9879968afb73f52a5421fdf4",
+    "README.md": "5bf9b26636e30a76a78b9bf92c1958d50c25608554fc9b4f38004e623484fd71",
+    "scripts/__init__.py": "c63ef875803d57a87c83116a4e90abba3b9f2d04a03171e5e1f09bfa620eb4db",
+    "scripts/bootstrap.py": "d51a86559d94b1fdf9f38b59837c0af3031eff5216fbdd6470b6075f3b283d33",
+    "scripts/check.py": "9d919ef75bd39f64ef174947ca84a8fe2d86c0b68aa69db03f78bd16eca58dd1",
+    "scripts/check_capabilities.py": "ec3c7da926a6cd43c77924a5ab1a3c10f580c45ecab62474f977e24f450d0d99",
+    "scripts/check_profiles.py": "9b737b35f8721c3a9643bce09a66de194c8308e59e6964c4300ed21dfa8ed91f",
+    "scripts/finalize_template.py": "4a8dfaa0345cb7d850894cc11e82228601055f2b30e30bd376fab12b0011c37a",
+    "scripts/update_template_manifest.py": "f4c6bf3742d22389ef9ebd168c85206a5cf90abc757b092950ba7288072c1a19",
+    "scripts/verify_distribution.py": "c33752a354b6996cfee31fffed8cc03938e9d61198bfa9eec53bf00f7c36b5aa",
+    "src/python_project_template/__init__.py": "e726b78ce715c723ff0a794052d2a9d27d2e4509afdd5e425c457af8e100c304",
+    "src/python_project_template/__main__.py": "633e7400e9e3b19aea5cbf6ac5cefd71e690c0859624f9ce28f8eb0f9e741b35",
+    "src/python_project_template/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/template/conftest.py": "f44222634fde2ea1ae9b7be15e8aab5988c12cfd59d975ca0c12a658bca7dc7e",
+    "tests/template/test_adoption_workflow.py": "9b0ef3661e65f2d0f43fab58121290dc7c9558eeb17314dc8d1e567ee5470eea",
+    "tests/template/test_bootstrap.py": "309ca82d882e535c5db88398335819a16e0423d67c0a5304ff4632f258538d5d",
+    "tests/template/test_finalize_template.py": "797810382664d6c2327ec6ddd9a45aaeeb642b50e733e90e5256f98e358a9aaf",
+    "tests/template/test_template_boundaries.py": "2281b5dd53e740f242be559612e831076ec7a097221e2ba6129cd7e480879b8a",
+    "tests/test_checks.py": "da27e51d7e7adf811f2146b50c1ffb3fb9a6f6c5c15edaa8e7fc6293ade722d8",
+    "tests/test_distribution.py": "f6e502209cdcdffbb45fb653139689721e8d982d8caabb0c31d0ef374caaf323",
+    "tests/test_package.py": "b7340fb75cd1b838c6764e727976de98b68f1251a89330117a4736b9366a9cf8",
+    "uv.lock": "c25ba229675473c0c34d9e4f447b08adc2644291a1b08b12760d45d642f047f9",
+    "CHANGELOG.md": "f24c97f4a7376487b31c4af579fc18f39f35fbf4860066e1bbba797c69f96a80"
+  },
+  "template_repository": "https://github.com/JorgeTato99/python-project-template",
+  "changelog": {
+    "template_version": "0.1.0",
+    "project_starter": "guide and empty Unreleased; independent history"
+  }
+}

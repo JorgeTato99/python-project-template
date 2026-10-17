@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "template": "python-project-template",
+  "source_url": "https://github.com/JorgeTato99/python-project-template",
+  "template_readme_sha256": "5bf9b26636e30a76a78b9bf92c1958d50c25608554fc9b4f38004e623484fd71",
+  "template_changelog_sha256": "f24c97f4a7376487b31c4af579fc18f39f35fbf4860066e1bbba797c69f96a80",
+  "files": {
+    "docs/template/adopcion.md": "aaf20ab0d8fe192c5a34f7aa29959bd437cf8b331bf0fb8bc6a10ce6b1691a11",
+    "docs/template/changelog-project.md.in": "e845f20a8fca56342959ab6a7d62bea05e232555d2084c7e20b4b9e859b8632c",
+    "docs/template/decisiones.md": "cbb7730f0697200299fb363ef1fedc9433bd8e19a7ee901471f60d1688266bc4",
+    "docs/template/evaluacion-tecnica.md": "43a6a607ba5b97778f2f7e27f03086ec138bd8262ca8bbdbf686eca8c744b5b6",
+    "docs/template/evidencia/validacion-inicial.json": "e45548940551f0cfa0f3c8aea3492e83b5ecc668a1b39448a48f20b0ccce331e",
+    "docs/template/evidencia/validacion.json": "71837e4c92a8bfb412085b61882f142746e719f3745ce6408ee7c1a1627fed6a",
+    "docs/template/python-boilerplate-guide.md": "013d4297ca560bc3e27bf65e41133542064d0723fc6ba0e8e41810c35d3fc8d6",
+    "docs/template/python-project-anti-patterns.md": "79796d6c6fc147b7a7a5cf08f4aa47670ec1e93fcdf73803364ec1d0082a1f49",
+    "docs/template/readme-project.md.in": "bfd39d4874efe69b446c0b5f5dbd1d9095862f8de85e0da562638033bc3f18a8",
+    "docs/template/README.md": "000687641dd13b80edc4b1b3c2556ee533364a21193e68547aef7dc740772567",
+    "docs/template/testing-commands.md": "44c0bdcf7641cfb343fd6405a62e6f4af322daf81180660820f8ca8d70ee5cf3",
+    "docs/template/testing-guide.md": "cb405c97e8e7551ce0efc6427a27d995e28242a42d05eb5c27424e5b71857724",
+    "docs/template/testing-patterns.md": "3ab1ead1e2a311c74c2221b8324d8931a441409a127dedfe876a2509b710696a",
+    "docs/template/verificacion-inicial.md": "238f043819ce347bd3759ab968bf2154cc140a88990e527809dc686c4fdb7f4b",
+    "docs/template/verificacion.md": "f454eef0d1f4229d28aff09bd1c1f17ee385bfe08636b2035a229daea7072acb",
+    "scripts/bootstrap.py": "d51a86559d94b1fdf9f38b59837c0af3031eff5216fbdd6470b6075f3b283d33",
+    "scripts/finalize_template.py": "4a8dfaa0345cb7d850894cc11e82228601055f2b30e30bd376fab12b0011c37a",
+    "scripts/update_template_manifest.py": "f4c6bf3742d22389ef9ebd168c85206a5cf90abc757b092950ba7288072c1a19",
+    "tests/template/conftest.py": "f44222634fde2ea1ae9b7be15e8aab5988c12cfd59d975ca0c12a658bca7dc7e",
+    "tests/template/test_adoption_workflow.py": "9b0ef3661e65f2d0f43fab58121290dc7c9558eeb17314dc8d1e567ee5470eea",
+    "tests/template/test_bootstrap.py": "309ca82d882e535c5db88398335819a16e0423d67c0a5304ff4632f258538d5d",
+    "tests/template/test_finalize_template.py": "797810382664d6c2327ec6ddd9a45aaeeb642b50e733e90e5256f98e358a9aaf",
+    "tests/template/test_template_boundaries.py": "2281b5dd53e740f242be559612e831076ec7a097221e2ba6129cd7e480879b8a"
+  }
+}

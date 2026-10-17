@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-16",
+  "checked_at_utc": "2026-10-17T05:19:51.600484+00:00",
+  "platform": "Windows x86-64",
+  "interpreters": [
+    "CPython 3.14.8 with GIL",
+    "CPython 3.15.0 with GIL"
+  ],
+  "core_tests_passed_per_interpreter": 42,
+  "optional_contracts_per_interpreter": {
+    "parallel_functional": 5,
+    "serial_benchmark_api": 1
+  },
+  "profiles": [
+    "api: ASGI request",
+    "data: aggregation and Parquet",
+    "notebooks: imports"
+  ],
+  "negative_controls": [
+    "mypy incompatible return and untyped definition detected",
+    "Bandit eval detected"
+  ],
+  "audit": {
+    "inventoried_distributions": 153,
+    "skipped_editable": 1,
+    "known_vulnerabilities_reported": 0,
+    "selection": "all extras and all groups, CPython3.15"
+  },
+  "distribution": [
+    "noneditable wheel installed outside checkout",
+    "sdist rebuilt",
+    "PEP517 forced build passed"
+  ],
+  "upstream_files_unchanged": 44,
+  "github_ci": "configured; not run",
+  "linux": "not run locally",
+  "source_sha256": {
+    ".github/workflows/ci.yml": "3c9a4ca226c4183518f3d6249843fed393508648c91441a679d5945b5ad2fdb4",
+    ".pre-commit-config.yaml": "f78ed86cfaeb9b794fab6334dde4b826bf5431a33f05681a1c7e47fdd2725ef0",
+    ".python-version": "8effb955f195345405c0cf4d0fb35f65165b59f444ad1a5fd9ff1ca9194fde29",
+    "pyproject.toml": "97511f30d36a7cd1b04511c83f43df0cf0766efb9879968afb73f52a5421fdf4",
+    "scripts/__init__.py": "c63ef875803d57a87c83116a4e90abba3b9f2d04a03171e5e1f09bfa620eb4db",
+    "scripts/bootstrap.py": "096cbccd2b588b1e72fdf3fa0ac73b3cebbc951076a2cb287b0d1ba624b70231",
+    "scripts/check.py": "9d919ef75bd39f64ef174947ca84a8fe2d86c0b68aa69db03f78bd16eca58dd1",
+    "scripts/check_capabilities.py": "ec3c7da926a6cd43c77924a5ab1a3c10f580c45ecab62474f977e24f450d0d99",
+    "scripts/check_profiles.py": "9b737b35f8721c3a9643bce09a66de194c8308e59e6964c4300ed21dfa8ed91f",
+    "scripts/verify_distribution.py": "c33752a354b6996cfee31fffed8cc03938e9d61198bfa9eec53bf00f7c36b5aa",
+    "src/python_project_template/__init__.py": "e726b78ce715c723ff0a794052d2a9d27d2e4509afdd5e425c457af8e100c304",
+    "src/python_project_template/__main__.py": "633e7400e9e3b19aea5cbf6ac5cefd71e690c0859624f9ce28f8eb0f9e741b35",
+    "src/python_project_template/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/conftest.py": "5f97575b0dcd26511053c3ad1bd96de7858c03ff54c5ab5882819b1e3b350953",
+    "tests/test_bootstrap.py": "2ca51cd68d9e31f3085854f4746b51ab5ba4effa3b9e63ce099e29fb24ebdb41",
+    "tests/test_checks.py": "da27e51d7e7adf811f2146b50c1ffb3fb9a6f6c5c15edaa8e7fc6293ade722d8",
+    "tests/test_distribution.py": "f6e502209cdcdffbb45fb653139689721e8d982d8caabb0c31d0ef374caaf323",
+    "tests/test_package.py": "b7340fb75cd1b838c6764e727976de98b68f1251a89330117a4736b9366a9cf8",
+    "uv.lock": "c25ba229675473c0c34d9e4f447b08adc2644291a1b08b12760d45d642f047f9"
+  },
+  "adoption": {
+    "name": "sample-project",
+    "core_tests_passed": 42,
+    "hooks_passed": 8,
+    "interpreter": "CPython3.15.0",
+    "isolated_git_fixture": true
+  }
+}
