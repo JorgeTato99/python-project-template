@@ -16,6 +16,21 @@ La suite incluye pruebas de generación de README y CHANGELOG propios, preservac
 
 El flujo integral crea una copia, personaliza su identidad, regenera el lock, instala el entorno, aplica formato, previsualiza el cierre, lo aplica y ejecuta `scripts/check.py` en el proyecto resultante. Las pruebas exclusivas de generación ya no forman parte de ese proyecto.
 
+## GitHub Actions
+
+La [primera ejecución pública de CI](https://github.com/JorgeTato99/python-project-template/actions/runs/39008708365), sobre el commit `655e19c10383adf16dd6ed4b33863bad2c9e8bb9`, terminó correctamente el 17 de octubre de 2026 (UTC).
+
+| Entorno remoto | Python 3.14.8 | Python 3.15.0 |
+| --- | --- | --- |
+| Núcleo en Windows | 72 aprobadas | 72 aprobadas |
+| Núcleo en Ubuntu | 71 aprobadas; 1 omitida | 71 aprobadas; 1 omitida |
+| Perfiles API, datos, notebooks y plugins en Windows | Correctos | Correctos |
+| Perfiles API, datos, notebooks y plugins en Ubuntu | Correctos | Correctos |
+
+La prueba omitida en Ubuntu corresponde a junctions, específicos de Windows. Los cuatro artefactos JUnit no presentan fallos ni errores. Pasaron los nueve jobs, incluido el control agregado y la auditoría del entorno completo seleccionada en Ubuntu con Python 3.15.0.
+
+La publicación inicial contiene 61 archivos versionados. Los ocho hooks de prek pasaron sobre el contenido completo antes del primer push. Los resultados de futuras revisiones se consultan en [Actions](https://github.com/JorgeTato99/python-project-template/actions).
+
 ## Git y saltos de línea
 
 Una prueba adicional preparó un índice Git y exportó los archivos con `core.autocrlf=true`. Bootstrap y previsualización del cierre pasaron sobre esa exportación. Los patrones de atributos fijan LF también para el asset `.md.in`.
@@ -43,7 +58,7 @@ Los ejemplos del plugin de benchmark comprueban su API. Sus tiempos no sustentan
 
 ## Límites
 
-- La matriz de GitHub Actions está configurada para Windows/Linux y ambas versiones; la ejecución remota y Linux quedan pendientes de publicar y ejecutar CI.
+- La ejecución remota indicada cubre la matriz Windows/Ubuntu configurada en ese snapshot. Los runners con etiquetas `latest` y las bases de vulnerabilidades pueden cambiar en ejecuciones posteriores.
 - No se comprobó macOS, ARM, PyPy, free threading ni versiones futuras.
 - La prueba de notebooks importa sus componentes; no comprueba todas sus interfaces o extensiones.
 - La API usa transporte ASGI en memoria; no representa un despliegue.

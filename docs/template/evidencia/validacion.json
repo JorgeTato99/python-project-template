@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "checked_at_utc": "2026-10-17T06:05:53.440760+00:00",
+  "checked_at_utc": "2026-10-17T06:08:35.472910+00:00",
   "phase": "template-changelog-and-publication",
   "platform": "Windows x86-64",
   "python": [
@@ -33,8 +33,63 @@
     "repeated bootstrap preserves project history"
   ],
   "git_autocrlf_export": "passed bootstrap and finalizer preview with core.autocrlf=true",
-  "github_ci": "configured; not run remotely",
-  "linux": "not run locally",
+  "github_ci": {
+    "url": "https://github.com/JorgeTato99/python-project-template/actions/runs/39008708365",
+    "commit": "655e19c10383adf16dd6ed4b33863bad2c9e8bb9",
+    "conclusion": "success",
+    "jobs_passed": 9,
+    "junit": {
+      "tests-ubuntu-latest-3.14.8": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "1",
+          "tests": "72",
+          "time": "4.178",
+          "timestamp": "2026-10-17T06:07:04.124105+00:00",
+          "hostname": "runnervm8k3b6"
+        }
+      ],
+      "tests-ubuntu-latest-3.15.0": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "1",
+          "tests": "72",
+          "time": "3.321",
+          "timestamp": "2026-10-17T06:07:08.093250+00:00",
+          "hostname": "runnervm8k3b6"
+        }
+      ],
+      "tests-windows-latest-3.14.8": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "72",
+          "time": "18.336",
+          "timestamp": "2026-10-17T06:07:14.120880+00:00",
+          "hostname": "runnervm0xl3a"
+        }
+      ],
+      "tests-windows-latest-3.15.0": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "72",
+          "time": "19.402",
+          "timestamp": "2026-10-17T06:07:18.071288+00:00",
+          "hostname": "runnervm0xl3a"
+        }
+      ]
+    }
+  },
+  "linux": "71 passed and 1 Windows-specific junction test skipped per interpreter in GitHub Actions",
   "initial_evidence": "validacion-inicial.json",
   "upstream_files_unchanged": 44,
   "source_sha256": {
@@ -71,5 +126,13 @@
   "changelog": {
     "template_version": "0.1.0",
     "project_starter": "guide and empty Unreleased; independent history"
+  },
+  "publication": {
+    "visibility": "public",
+    "is_template": true,
+    "branch": "main",
+    "description_characters": 348,
+    "tracked_files": 61,
+    "prek_hooks_passed": 8
   }
 }
