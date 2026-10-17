@@ -1,0 +1,104 @@
+[build-system]
+requires = ["uv_build==0.13.1"]
+build-backend = "uv_build"
+
+[project]
+name = "python-project-template"
+version = "0.1.0"
+description = "Base reutilizable para desarrollar, probar y distribuir proyectos Python."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.scripts]
+python-project-template = "python_project_template.__main__:main"
+
+[project.optional-dependencies]
+api = ["fastapi>=0.143.3", "uvicorn[standard]>=0.54.0", "httpx>=0.28.1"]
+data = ["numpy>=2.5.4", "polars>=2.0.0", "pyarrow>=26.0.0"]
+
+[dependency-groups]
+dev = [
+    {include-group = "test"},
+    {include-group = "lint"},
+    {include-group = "typing"},
+    {include-group = "security"},
+]
+test = ["pytest>=9.1.1", "pytest-cov>=7.1.0", "coverage[toml]>=7.16.2"]
+lint = ["ruff>=0.17.1"]
+typing = ["mypy>=2.4.0"]
+security = ["bandit[toml]>=1.9.4", "pip-audit>=2.10.1"]
+async = ["pytest-asyncio>=1.4.0"]
+parallel = ["pytest-xdist>=3.8.0"]
+performance = ["pytest-benchmark>=5.3.0"]
+property = ["hypothesis>=6.170.1"]
+mock = ["pytest-mock>=3.16.0"]
+random = ["pytest-randomly>=5.0.0"]
+timeout = ["pytest-timeout>=2.4.0"]
+watch = ["pytest-watcher>=0.6.3"]
+hooks = ["prek>=0.5.5"]
+notebooks = ["ipykernel>=7.4.0", "jupyterlab>=4.6.4"]
+tools = ["PyYAML>=6.0.3"]
+
+[tool.uv]
+required-version = ">=0.13.1,<0.14"
+default-groups = ["dev"]
+
+[tool.uv.build-backend]
+source-include = ["tests/**", "scripts/**", "docs/**", ".python-version", ".pre-commit-config.yaml", "Makefile", "uv.lock"]
+source-exclude = ["/temp", "/.venv*", "/dist", "/build", "/artifacts"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 88
+extend-exclude = ["temp", "dist", "build", ".venv*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4", "PIE"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["python_project_template"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.mypy]
+python_version = "3.14"
+files = ["src", "scripts"]
+strict = true
+warn_unreachable = true
+warn_unused_configs = true
+exclude = ["^temp/", "^dist/", "^build/", "^\\.venv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = ["--import-mode=importlib", "--strict-config", "--strict-markers", "-ra"]
+filterwarnings = ["error"]
+markers = [
+    "integration: Pruebas de comandos y personalización en proyectos temporales.",
+]
+
+[tool.coverage.run]
+source = ["python_project_template", "scripts"]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+precision = 2
+
+[tool.bandit]
+targets = ["src", "scripts"]
+exclude_dirs = ["tests", "temp", ".venv"]
