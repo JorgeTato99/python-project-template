@@ -23,7 +23,7 @@ dependencies = []
 python-project-template = "python_project_template.__main__:main"
 
 [project.optional-dependencies]
-api = ["fastapi>=0.143.3", "uvicorn[standard]>=0.54.0", "httpx>=0.28.1"]
+api = ["fastapi>=0.158.1", "uvicorn[standard]>=0.54.0", "httpx>=0.28.1"]
 data = ["numpy>=2.5.4", "polars>=2.0.0", "pyarrow>=26.0.0"]
 
 [dependency-groups]
