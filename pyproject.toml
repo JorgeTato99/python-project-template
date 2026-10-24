@@ -45,7 +45,7 @@ mock = ["pytest-mock>=3.16.0"]
 random = ["pytest-randomly>=5.0.0"]
 timeout = ["pytest-timeout>=2.4.0"]
 watch = ["pytest-watcher>=0.6.3"]
-hooks = ["prek>=0.5.5"]
+hooks = ["prek>=0.5.7"]
 notebooks = ["ipykernel>=7.4.0", "jupyterlab>=4.6.4"]
 tools = ["PyYAML>=6.0.3"]
 
